@@ -24,4 +24,9 @@ class Photo < ApplicationRecord
   has_many :comments
 
   has_many :likes
+
+
+  #has_many :fans, through: :likes, source: :fan
+  #we don't need to write this out because we named this association plural fans, if our names are conventional Rails can figure it out!
+  has_many :fans, through: :likes
 end
