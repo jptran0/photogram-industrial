@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  root "photos#index"
 
   resources :likes
   resources :follow_requests
